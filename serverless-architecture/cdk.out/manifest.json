@@ -1,0 +1,409 @@
+{
+  "version": "34.0.0",
+  "artifacts": {
+    "ServerlessArchitecture.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "ServerlessArchitecture.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "ServerlessArchitecture": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://412682901543/us-east-1",
+      "properties": {
+        "templateFile": "ServerlessArchitecture.template.json",
+        "terminationProtection": false,
+        "tags": {
+          "Environment": "Production",
+          "Owner": "CloudDeveloper",
+          "Project": "ServerlessArchitecture"
+        },
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::412682901543:role/cdk-hnb659fds-deploy-role-412682901543-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::412682901543:role/cdk-hnb659fds-cfn-exec-role-412682901543-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-412682901543-us-east-1/af4fe5136c1016b80ddaf9a6e23ea324a09c36e7865f6284584655d214f42a0a.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "ServerlessArchitecture.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::412682901543:role/cdk-hnb659fds-lookup-role-412682901543-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "ServerlessArchitecture.assets"
+      ],
+      "metadata": {
+        "/ServerlessArchitecture": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "Environment",
+                "Value": "Production"
+              },
+              {
+                "Key": "Owner",
+                "Value": "CloudDeveloper"
+              },
+              {
+                "Key": "Project",
+                "Value": "ServerlessArchitecture"
+              }
+            ]
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessAssets/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessAssets7D3D421B"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessAssets/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessAssetsPolicy7C3538E5"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessAssets/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessAssetsAutoDeleteObjectsCustomResource771F5FCC"
+          }
+        ],
+        "/ServerlessArchitecture/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/ServerlessArchitecture/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessDistribution/Origin1/S3Origin/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessDistributionOrigin1S3Origin609D9EF3"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessDistribution/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessDistribution4A1AEFD1"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessDataTable": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "ServerlessDataTableB0CD624D"
+            }
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessDataTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessDataTableB0CD624D"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessUserPool/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessUserPool2D5728C9"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessUserPoolClient/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessUserPoolClientC25F7D6C"
+          }
+        ],
+        "/ServerlessArchitecture/ApiLambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaServiceRole1CC7D0F3"
+          }
+        ],
+        "/ServerlessArchitecture/ApiLambda/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaServiceRoleDefaultPolicyF1B57697"
+          }
+        ],
+        "/ServerlessArchitecture/ApiLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambda91D2282D"
+          }
+        ],
+        "/ServerlessArchitecture/ApiLambda/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaLogRetentionACE0F34E"
+          }
+        ],
+        "/ServerlessArchitecture/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB"
+          }
+        ],
+        "/ServerlessArchitecture/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB"
+          }
+        ],
+        "/ServerlessArchitecture/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApi21071D75"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiCloudWatchRole38056DF6"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiAccount46D9C997"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiDeployment5B47D3B0ad5ef5090ee6cd567d889039f72102ae"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiDeploymentStageprodCF80C7AD"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiEndpoint39E2F4FD"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Default/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiOPTIONSA9BEED91"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Default/api/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiapiD6C3306F"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Default/api/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiapiOPTIONS5ACF14DD"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Default/api/v1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiapiv100E44641"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Default/api/v1/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiapiv1OPTIONSA806F19C"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Default/api/v1/health/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiapiv1healthFCB11B20"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Default/api/v1/health/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiapiv1healthOPTIONS6CC0CB53"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Default/api/v1/health/GET/ApiPermission.ServerlessArchitectureServerlessApi20EA29DE.GET..api.v1.health": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiapiv1healthGETApiPermissionServerlessArchitectureServerlessApi20EA29DEGETapiv1health27FD9CD7"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Default/api/v1/health/GET/ApiPermission.Test.ServerlessArchitectureServerlessApi20EA29DE.GET..api.v1.health": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiapiv1healthGETApiPermissionTestServerlessArchitectureServerlessApi20EA29DEGETapiv1healthB06268E2"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Default/api/v1/health/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiapiv1healthGETF685B60A"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Default/api/v1/data/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiapiv1data4F6DFA62"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Default/api/v1/data/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiapiv1dataOPTIONS6EDDD85E"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Default/api/v1/data/GET/ApiPermission.ServerlessArchitectureServerlessApi20EA29DE.GET..api.v1.data": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiapiv1dataGETApiPermissionServerlessArchitectureServerlessApi20EA29DEGETapiv1dataFA7F1F93"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Default/api/v1/data/GET/ApiPermission.Test.ServerlessArchitectureServerlessApi20EA29DE.GET..api.v1.data": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiapiv1dataGETApiPermissionTestServerlessArchitectureServerlessApi20EA29DEGETapiv1data6577F4D1"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Default/api/v1/data/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiapiv1dataGETD87374F1"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Default/api/v1/data/POST/ApiPermission.ServerlessArchitectureServerlessApi20EA29DE.POST..api.v1.data": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiapiv1dataPOSTApiPermissionServerlessArchitectureServerlessApi20EA29DEPOSTapiv1data1F9C083F"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Default/api/v1/data/POST/ApiPermission.Test.ServerlessArchitectureServerlessApi20EA29DE.POST..api.v1.data": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiapiv1dataPOSTApiPermissionTestServerlessArchitectureServerlessApi20EA29DEPOSTapiv1data84C04D46"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessApi/Default/api/v1/data/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessApiapiv1dataPOST023E20F6"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessNotifications/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessNotificationsF68F9758"
+          }
+        ],
+        "/ServerlessArchitecture/ServerlessDashboard/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServerlessDashboardF25B6FE5"
+          }
+        ],
+        "/ServerlessArchitecture/HighErrorRateAlarm/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HighErrorRateAlarm9E2FAEE9"
+          }
+        ],
+        "/ServerlessArchitecture/HighLatencyAlarm/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HighLatencyAlarm61213652"
+          }
+        ],
+        "/ServerlessArchitecture/ApiUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiUrl"
+          }
+        ],
+        "/ServerlessArchitecture/CloudFrontUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CloudFrontUrl"
+          }
+        ],
+        "/ServerlessArchitecture/UserPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolId"
+          }
+        ],
+        "/ServerlessArchitecture/UserPoolClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolClientId"
+          }
+        ],
+        "/ServerlessArchitecture/DynamoTableName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoTableName"
+          }
+        ],
+        "/ServerlessArchitecture/S3BucketName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "S3BucketName"
+          }
+        ],
+        "/ServerlessArchitecture/DashboardUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DashboardUrl"
+          }
+        ],
+        "/ServerlessArchitecture/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/ServerlessArchitecture/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/ServerlessArchitecture/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "ServerlessArchitecture"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
