@@ -103,6 +103,7 @@ cdk destroy
 
 ## 📁 Repository Structure
 
+<<<<<<< HEAD
 ```
 AWS-CDK-IAC-Projects/
 ├── serverless-architecture/          # Complete Serverless Stack
@@ -120,6 +121,8 @@ AWS-CDK-IAC-Projects/
 └── ci-cd/                         # DevOps and Automation
 ```
 
+=======
+>>>>>>> 1ef8f7bd782cb0f5c453d2c199844b0e6b1c9c65
 ## 🛠️ Technology Stack
 
 | Component | Technology | Version |
@@ -316,4 +319,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [![AWS CDK](https://img.shields.io/badge/AWS%20CDK-v2-blue)](https://aws.amazon.com/cdk/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-4.9+-blue)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green)](https://nodejs.org/)
+<<<<<<< HEAD
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+=======
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+>>>>>>> 1ef8f7bd782cb0f5c453d2c199844b0e6b1c9c65
